@@ -1,0 +1,78 @@
+<html>
+
+
+
+
+
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div class="bg-color">
+        <div class="container mt-5">
+            <div class="title text-center">
+                <div class="bg-h1">
+                </div>
+                <h1>Bookmarker</h1>
+            </div>
+            <div class="inputsTitle mt-5">
+                <h2 class="text-center"><i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+            </div>
+            <div class="inputs mt-5">
+                <div class="siteNme">
+                    <span> <i class="fa-solid fa-floppy-disk pe-2"></i>Site Name</span>
+                    <input class="form-control mt-2" id="siteName" placeholder="Bookmark Name" type="text">
+                    <span id="nameErrMsg" class=" msg ms-3 mt-1 "></span>
+                </div>
+                <div class="siteUrl">
+                    <span><i class="fa-solid fa-link pe-2 mt-4"></i> Site URL</span>
+                    <input class="form-control mt-2" id="siteUrl" placeholder="Site URL" type="text">
+                    <span id="urlErrMsg" class=" msgU ms-3 mt-1"></span>
+                    <div class="button text-center mt-4">
+                        <button onclick="submit()" class="btn btn-warning ps-5 pe-5 text-center">submit</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <table class="table  mt-5 ">
+                <tr>
+                    <th class="text-center ">index</th>
+                    <th class="text-center ">Website Name</th>
+                    <th class="text-center ">Visit</th>
+                    <th class="text-center ">Delete</th>
+                </tr>
+                <tbody id="idTable" class="text-center">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+
+
+
+
+
+
+</html>
